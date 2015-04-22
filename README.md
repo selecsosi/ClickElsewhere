@@ -1,4 +1,4 @@
-# ClickElsewhere - [![Build Status](https://travis-ci.org/selecsosi/onClickElsewhere.svg?branch=master)](https://travis-ci.org/selecsosi/onClickElsewhere)
+# ClickElsewhere - [![Build Status](https://travis-ci.org/selecsosi/ClickElsewhere.svg?branch=master)](https://travis-ci.org/selecsosi/ClickElsewhere)
 
 Plugin which allows you to bind a callback that runs when a click happens outside of a element
 
