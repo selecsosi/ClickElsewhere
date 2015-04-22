@@ -1,0 +1,26 @@
+{
+  "name": "onClickElsewhere",
+  "version": "1.0.0",
+  "description": "Plugin which allows you to bind a callback that runs when a click happens outside of a element",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "grunt travis --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/selecsosi/onClickElsewhere.git"
+  },
+  "author": "Sam Lahti",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/selecsosi/onClickElsewhere/issues"
+  },
+  "dependencies": {
+    "jquery": "~1.7.0",
+    "jasmine-jquery": "*",
+    "jasmine-node": "^1.14.5",
+    "grunt": "*",
+    "grunt-contrib-jasmine": "*"
+  },
+  "homepage": "https://github.com/selecsosi/onClickElsewhere"
+}
