@@ -13,45 +13,53 @@ jquery - uses jquery for event handingling
 
 Simple:
 
-    var clickedOutsideButton = false;
-    var callback = function(e) {
-        if(e) e.preventDefault();
-        //do some other stuff
-        clickedOutsideButton = true;
-    };
+```javascript
+var clickedOutsideButton = false;
+var callback = function(e) {
+    if(e) e.preventDefault();
+    //do some other stuff
+    clickedOutsideButton = true;
+};
 
-    ClickElsewhere.onClickElsewhere($("#button"), callback);
+ClickElsewhere.onClickElsewhere($("#button"), callback);
+```
 
 More complex:
 
-    var nameFinishedEditing = false;
-    var callback = function(e) {
-        if(e) e.preventDefault();
-        //do some other stuff
-        nameFinishedEditing = true;
-    };
+```javascript
+var nameFinishedEditing = false;
+var callback = function(e) {
+    if(e) e.preventDefault();
+    //do some other stuff
+    nameFinishedEditing = true;
+};
 
-    $("#name-field").click(function(e) {
-        if(e) e.preventDefault();
-        //do stuff to put the name field in and edit mode
-        ClickElsewhere.onClickElsewhere(this, callback);
-    });
+$("#name-field").click(function(e) {
+    if(e) e.preventDefault();
+    //do stuff to put the name field in and edit mode
+    ClickElsewhere.onClickElsewhere(this, callback);
+});
+```
 
 Remove Callback:
 
-    //Callback attached to name-field
-    ClickElsewhere.removeOnClickElsewhere($("#name-field"));
+```javascript
+//Callback attached to name-field
+ClickElsewhere.removeOnClickElsewhere($("#name-field"));
+```
 
 jQuery Plugin
 
-    var clickedOutsideButton = false;
-    var callback = function(e) {
-        if(e) e.preventDefault();
-        //do some other stuff
-        clickedOutsideButton = true;
-    };
+```javascript
+var clickedOutsideButton = false;
+var callback = function(e) {
+    if(e) e.preventDefault();
+    //do some other stuff
+    clickedOutsideButton = true;
+};
 
-    $("#button").onClickElsewhere(callback);
+$("#button").onClickElsewhere(callback);
+```
 
 ## Authors
 
