@@ -17,7 +17,7 @@ Simple:
     var callback = function(e) {
         if(e) e.preventDefault();
         //do some other stuff
-        nameFinishedEditing = true;
+        clickedOutsideButton = true;
     };
 
     ClickElsewhere.onClickElsewhere($("#button"), callback);
@@ -48,7 +48,7 @@ jQuery Plugin
     var callback = function(e) {
         if(e) e.preventDefault();
         //do some other stuff
-        nameFinishedEditing = true;
+        clickedOutsideButton = true;
     };
 
     $("#button").onClickElsewhere(callback);
