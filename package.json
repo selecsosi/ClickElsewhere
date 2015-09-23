@@ -20,7 +20,9 @@
     "jasmine-jquery": "*",
     "jasmine-node": "*",
     "grunt": "*",
-    "grunt-contrib-jasmine": "*"
+    "load-grunt-tasks": "~0.2.0",
+    "grunt-contrib-jasmine": "*",
+    "grunt-contrib-uglify": "0.2.x"
   },
   "homepage": "https://github.com/selecsosi/ClickElsewhere"
 }

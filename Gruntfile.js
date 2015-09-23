@@ -1,4 +1,6 @@
 module.exports = function(grunt) {
+    require('load-grunt-tasks')(grunt);
+
     grunt.initConfig({
         jasmine: {
             components: {
@@ -13,12 +15,17 @@ module.exports = function(grunt) {
                     //helpers: 'test/spec/*.js'
                 }
             }
+        },
+        uglify: {
+            clickElsewhere: {
+                files: {
+                    'clickElsewhere.min.js': 'src/clickElsewhere.js'
+                }
+            }
         }
     });
 
-    grunt.loadNpmTasks('grunt-contrib-jasmine');
-
     grunt.registerTask('travis', ['jasmine']);
-    grunt.registerTask('default', ['jasmine']);
+    grunt.registerTask('default', ['jasmine', 'uglify']);
 };
 
