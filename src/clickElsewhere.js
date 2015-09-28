@@ -48,7 +48,6 @@
         // registrations
         var attachDocumentOnClickCallback = function($el, callback, thisArg) {
             var onClick = function(e) {
-                if(e) e.preventDefault();
                 if($el.has(e.target).length === 0 && $el[0] != e.target){
                     $el.removeData(dataKey);
                     if(callback) {
@@ -59,7 +58,6 @@
                     $el.data(dataKey, onClick);
                     $(document).one('click', onClick);
                 }
-                return false;
             };
 
             $(document).one('click', onClick);
